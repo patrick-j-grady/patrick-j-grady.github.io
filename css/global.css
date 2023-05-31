@@ -1,0 +1,22 @@
+html {
+    background-color: #27233A;
+}
+
+.global-container {
+    background-color: #27233A;
+    min-height: 80vh;
+}
+
+footer {
+    background-color: #505168;
+    min-height: 20vh;
+    border-top: 8px groove #DCC48E;
+}
+
+footer div {
+    text-align: right;
+    color: #DCC48E;
+    margin: 0 10% 0 55%;
+    padding-top: 25px;
+    width: 40%;
+}
