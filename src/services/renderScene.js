@@ -53,10 +53,10 @@ export function CreateScene() {
     // Texture loading
     textureLoader = new THREE.TextureLoader()
 
-    torchMat = LoadMaterial("src/textures/metal/metal", 1, 1)
+    torchMat = LoadMaterial("textures/metal/metal", 1, 1)
     
     // Floor
-    roomMat = LoadMaterial("src/textures/bricks/bricks", roomX, roomZ)
+    roomMat = LoadMaterial("textures/bricks/bricks", roomX, roomZ)
     const floorGeo = new THREE.PlaneGeometry(roomX, roomZ, 10, 10)
     floor = new THREE.Mesh(floorGeo, roomMat)
 
@@ -66,7 +66,7 @@ export function CreateScene() {
     scene.add(floor)
 
     // Roof
-    roof = new THREE.Mesh(new THREE.PlaneGeometry(roomX, roomZ, 10, 10), LoadMaterial("src/textures/bricks/bricks", roomX, roomZ))
+    roof = new THREE.Mesh(new THREE.PlaneGeometry(roomX, roomZ, 10, 10), LoadMaterial("textures/bricks/bricks", roomX, roomZ))
 
     roof.rotateX(Math.PI / 2)
     roof.position.y += roomY
@@ -75,10 +75,10 @@ export function CreateScene() {
     scene.add(roof)
 
     // Walls
-    roomMat = LoadMaterial("src/textures/bricks/bricks", roomZ, roomY)
+    roomMat = LoadMaterial("textures/bricks/bricks", roomZ, roomY)
     wallL = new THREE.Mesh(new THREE.PlaneGeometry(roomZ, roomY, 10, 10), roomMat)
     wallR = new THREE.Mesh(new THREE.PlaneGeometry(roomZ, roomY, 10, 10), roomMat)
-    wallB = new THREE.Mesh(new THREE.PlaneGeometry(roomX, roomY, 10, 10), LoadMaterial("src/textures/bricks/bricks", roomX, roomY))
+    wallB = new THREE.Mesh(new THREE.PlaneGeometry(roomX, roomY, 10, 10), LoadMaterial("textures/bricks/bricks", roomX, roomY))
 
     wallL.rotateY(Math.PI / 2)
     wallL.position.y += roomY/2
@@ -269,7 +269,7 @@ function CreateColumns(mat) {
     fires = []
     let geo = new THREE.BoxGeometry(columnSize, roomY, columnSize)
     let zSpace = roomZ
-    let columnMat = LoadMaterial("src/textures/bricks/bricks", columnSize, roomY)
+    let columnMat = LoadMaterial("textures/bricks/bricks", columnSize, roomY)
 
     for(let i = 0; i < columnCount; i++) {
         let col = new THREE.Mesh(geo, columnMat)
@@ -292,7 +292,7 @@ function CreateColumns(mat) {
 function CreateTorch(pos) {
     const gltfLoader = new GLTFLoader();
 
-    gltfLoader.load( 'src/models/torch.glb', function ( gltf ) {
+    gltfLoader.load( 'models/torch.glb', function ( gltf ) {
 
         let torchModel = gltf.scene
         torchModel.traverse((o) => {
@@ -313,7 +313,7 @@ function CreateTorch(pos) {
     
     } );
 
-    const fireTex = textureLoader.load('src/textures/Fire2.png')
+    const fireTex = textureLoader.load('textures/Fire2.png')
     let f = new Fire(fireTex)
     f.scale.set(0.38, 1.08, 0.38)
 
