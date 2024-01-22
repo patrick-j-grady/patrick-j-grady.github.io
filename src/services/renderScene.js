@@ -249,7 +249,7 @@ function LoadMaterial(path, repeatX, repeatY) {
     const normal = LoadTexture(path + "_normal.png", repeatX, repeatY)
     const ao = LoadTexture(path + "_occlusion.exr", repeatX, repeatY)
     const displace = LoadTexture(path + "_displace.exr", repeatX, repeatY)
-    const rough = LoadTexture(path + "_rouguh.exr", repeatX, repeatY)
+    const rough = LoadTexture(path + "_rough.exr", repeatX, repeatY)
     const metal = LoadTexture(path + "_metal.exr", repeatX, repeatY)
     const emission = LoadTexture(path + "_emission.png", repeatX, repeatY)
 
