@@ -3,7 +3,7 @@ import solidPlugin from 'vite-plugin-solid';
 // import devtools from 'solid-devtools/vite';
 
 export default defineConfig({
-  base: '/patrick-j-grady.github.io/',
+  //base: '/patrick-j-grady.github.io/',
   plugins: [
     /* 
     Uncomment the following line to enable solid-devtools.
