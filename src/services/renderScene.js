@@ -100,11 +100,11 @@ export function CreateScene() {
     CreateColumns(roomMat)
 
     // Directional light (for testing)
-    const dirLight = new THREE.DirectionalLight( 0xffffff, 3 );
+    /*const dirLight = new THREE.DirectionalLight( 0xffffff, 3 );
     dirLight.color.setHSL( 0.1, 1, 0.95 );
     dirLight.position.set( - 1, 1.75, 1 );
     dirLight.position.multiplyScalar( 30 );
-    //scene.add( dirLight );
+    scene.add( dirLight );
 
     dirLight.castShadow = true;
 
@@ -121,10 +121,9 @@ export function CreateScene() {
     dirLight.shadow.camera.far = 3500;
     dirLight.shadow.bias = - 0.0001;
 
-    //const dirLightHelper = new THREE.DirectionalLightHelper( dirLight, 10 );
-    //scene.add( dirLightHelper );
+    const dirLightHelper = new THREE.DirectionalLightHelper( dirLight, 10 );
+    scene.add( dirLightHelper );*/
     
-    // lmao bro is 2 tall
     camera.position.y = 2
     camera.position.x = -roomX/8
     camera.position.z = roomZ

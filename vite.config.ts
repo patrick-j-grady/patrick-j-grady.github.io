@@ -3,7 +3,11 @@ import solidPlugin from 'vite-plugin-solid';
 // import devtools from 'solid-devtools/vite';
 
 export default defineConfig({
+  // Comment this out for production build
+  // Required for local testing
+  // I have zero clue why it's like this
   //base: '/patrick-j-grady.github.io/',
+  
   plugins: [
     /* 
     Uncomment the following line to enable solid-devtools.
