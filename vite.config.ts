@@ -17,4 +17,5 @@ export default defineConfig({
   build: {
     target: 'esnext',
   },
+  base: '/patrick-j-grady.github.io/',
 });
