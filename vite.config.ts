@@ -7,7 +7,7 @@ export default defineConfig({
   // Required for local testing
   // I have zero clue why it's like this
   //base: '/patrick-j-grady.github.io/',
-  
+
   plugins: [
     /* 
     Uncomment the following line to enable solid-devtools.
