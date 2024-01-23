@@ -14,11 +14,12 @@ const App: Component = () => {
   InitializeRendering()
   return (
     <div class={styles.App}>
-      <ul class="block absolute right-16 top-16 space-y-8">
-        <li class="button-width block text-7xl font-mono text-center text-stone-200">Patrick J Grady</li>
-        <li><a class="button-width block text-7xl font-mono text-right text-stone-400 bg-zinc-900 pt-8 px-48 pb-16 button-radius hover:text-stone-200 hover:bg-zinc-600" href="https://www.artstation.com/patrickjgrady">Artstation</a></li>
-        <li><a class="button-width block text-7xl font-mono text-right text-stone-400 bg-zinc-900 pt-8 px-48 pb-16 button-radius hover:text-stone-200 hover:bg-zinc-600" href="https://itch.io/profile/patrickjgrady">Itch.io</a></li>
-        <li><a class="button-width block text-7xl font-mono text-right text-stone-400 bg-zinc-900 pt-8 px-48 pb-16 button-radius hover:text-stone-200 hover:bg-zinc-600" href="https://github.com/patrick-j-grady">Github</a></li>
+      <ul class="block absolute h-screen w-screen right-0 top-0 pt-16 space-y-8 overflow-y-scroll">
+        <li class="button-width block ml-auto right-16 text-7xl font-mono text-center text-stone-200">Patrick J Grady</li>
+        <li><a class="button-width block ml-auto right-16 text-7xl font-mono text-right text-stone-400 bg-zinc-900 pt-8 px-48 pb-16 button-radius hover:text-stone-200 hover:bg-zinc-600" href="https://www.artstation.com/patrickjgrady">Artstation</a></li>
+        <li><a class="button-width block ml-auto right-16 text-7xl font-mono text-right text-stone-400 bg-zinc-900 pt-8 px-48 pb-16 button-radius hover:text-stone-200 hover:bg-zinc-600" href="https://itch.io/profile/patrickjgrady">Itch.io</a></li>
+        <li><a class="button-width block ml-auto right-16 text-7xl font-mono text-right text-stone-400 bg-zinc-900 pt-8 px-48 pb-16 button-radius hover:text-stone-200 hover:bg-zinc-600" href="https://github.com/patrick-j-grady">Github</a></li>
+        <li><a class="button-width block ml-auto right-16 text-7xl font-mono text-right text-stone-400 bg-zinc-900 pt-8 px-48 pb-16 button-radius hover:text-stone-200 hover:bg-zinc-600" href="https://www.chromachronicles.com/">Chroma Chronicles</a></li>
       </ul>
     </div>
   );
